@@ -10,9 +10,16 @@ controller.list = (req, res) =>{
             if (err) {
                 res.json(err);
             }
-            res.render('')
+            res.render('vista', {
+                data: rows
+            });
         });
     });
 };
+
+controller.save = (req, res) =>{
+    console.log(req.body);
+    res.send('works')
+}
 
 module.exports = controller;

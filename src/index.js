@@ -7,6 +7,7 @@ const path = require('path');
 
 //importing routes 
 const rutas = require('./routes/routes');
+const { urlencoded } = require('express');
 
 
 
@@ -24,6 +25,7 @@ app.use(myconnection(mysql, {
     port: 3306,
     database: 'news'
 }, 'single'));
+app.use(express.urlencoded({extended: false}));
 
 //rutas
 app.use('/', rutas);

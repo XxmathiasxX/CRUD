@@ -4,6 +4,6 @@ const router = express.Router();//este metodo nos devuelve un objeto js al cual 
 const controladores = require('../controllers/controladores');
 
 router.get('/',controladores.list);
-
+router.post('/add', controladores.save)
 
 module.exports = router;

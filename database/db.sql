@@ -3,8 +3,9 @@ CREATE DATABASE news;
 USE news;
 -- creacion de la tabla (por ahora)
 CREATE TABLE noticia (
+    autor VARCHAR(255) NOT NULL,
     name_new VARCHAR(255) NOT NULL,
-    desarrollo VARCHAR(10000) NOT NULL
+    contenido VARCHAR(10000) NOT NULL
 );
 
 --PARA MOSTRAR LAS TABLAS
