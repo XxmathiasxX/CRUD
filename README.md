@@ -10,3 +10,4 @@ this pakege it's for press Ctrl + s and save all the changes is how live server
 `"dev": "nodemon src/app.js"`
 - for run the server you need the write 
  `npm run dev`
+ ## proximas actualizacion es conectar con mongodb
